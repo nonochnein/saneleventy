@@ -19,6 +19,7 @@ async function getPosts () {
     _id,
     publishedAt,
     title,
+    subtitle,
     slug,
     body[]{
       ...,
