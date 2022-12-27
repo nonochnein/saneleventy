@@ -12,6 +12,12 @@ export default {
       description: 'Titles should be catchy, descriptive, and not too long'
     },
     {
+      name: 'subtitle',
+      type: 'string',
+      title: 'Subtitle',
+      description: 'Something to add on to the main title'
+    },
+    {
       name: 'slug',
       type: 'slug',
       title: 'Slug',
