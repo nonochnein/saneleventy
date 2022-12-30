@@ -6,7 +6,9 @@ templateClass: tmpl-post
   <h1>{{ post.title }}</h1>
   <h2>{{ post.subtitle }}</h2>
   
-  <pre>{{ post.mainImage }}</pre>
+  <pre>{{ post.imageUrl }}</pre>
+  
+  <img src="{{ post.imageUrl }}">
   
   <p style='font-size: 0.9em'>By <span style='text-transform: uppercase; font-weight: bold'>{% for author in post.authors %}{{author.name}}{% endfor %}</span>  </p>
   {{ post.body | markdownify | safe }}
