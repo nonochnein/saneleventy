@@ -21,7 +21,7 @@ async function getPosts () {
     title,
     subtitle,
     slug,
-    mainImage,
+    "imageUrl": mainImage.asset->url,
     body[]{
       ...,
       children[]{
